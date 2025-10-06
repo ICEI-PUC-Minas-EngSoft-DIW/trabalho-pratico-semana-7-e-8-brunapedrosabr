@@ -33,7 +33,7 @@ const locais = [
   },
 ];
 
-document.addEventListener("DOMContentLoaded", () => {
+function montarCards() {
   const container = document.getElementById("destaques-container");
 
   if (container) {
@@ -51,5 +51,41 @@ document.addEventListener("DOMContentLoaded", () => {
 
       container.appendChild(card);
     });
+  }
+}
+
+function getIdFromURL() {
+  const params = new URLSearchParams(window.location.search);
+  return parseInt(params.get("id"));
+}
+
+function mostrarDetalhes() {
+  const id = getIdFromURL();
+  const local = locais.find((item) => item.id === id);
+
+  const container = document.getElementById("detalhes-container");
+
+  container.innerHTML = `
+    <section class="secao-detalhes">
+      <h1>${local.nome}</h1>
+      <img src="${local.imagem}" alt="${local.nome}" class="imagem-detalhes" />
+      <p><strong>Categoria:</strong> ${local.categoria}</p>
+      <p><strong>Endereço:</strong> ${local.endereco}</p>
+      <p>${local.detalhes}</p>
+      <a href="index.html">← Voltar para a Home</a>
+    </section>
+  `;
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  if (
+    window.location.pathname.includes("index.html") ||
+    window.location.pathname === "/"
+  ) {
+    montarCards();
+  }
+
+  if (window.location.pathname.includes("detalhes.html")) {
+    mostrarDetalhes();
   }
 });
