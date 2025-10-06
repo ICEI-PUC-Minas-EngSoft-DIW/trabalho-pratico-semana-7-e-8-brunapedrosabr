@@ -19,26 +19,48 @@ Leia o enunciado completo no Canvas.
 
 ## Print da Home-Page
 
-<< COLOQUE A IMAGEM AQUI >>
+![Print 1](img/Print Home.png)
+![Print 2](img/Print Home Destaques.png)
 
 ## Print da página de detalhes do item
 
-<< COLOQUE A IMAGEM AQUI >>
+![Print 3](img/Print Detalhes do Restaurante.png)
 
 ## Cole aqui abaixo a estrutura JSON utilizada no app.js
 
 ```javascript
-const dados = [
+const locais = [
   {
     id: 1,
-    titulo: "Prefeitura Lança Plano de Mobilidade Urbana",
-    descricao: "Novo plano do transporte público.",
-    conteudo:
-      "A Prefeitura apresentou nesta segunda-feira um novo plano de mobilidade urbana.",
-    categoria: "Cidades",
-    autor: "Joana Ribeiro",
-    data: "2025-03-30",
-    imagem: "img/mobilidade.jpg",
+    nome: "Coco Bambu Minas Shopping",
+    descricao:
+      "Restaurante da Semana: frutos do mar e pratos nordestinos em ambiente elegante.",
+    imagem: "../img/coco_bambu.jpg",
+    categoria: "Restaurante da Semana",
+    endereco: "Av. Cristiano Machado, 4000 – União, BH",
+    detalhes:
+      "O Coco Bambu é conhecido pela variedade de pratos com frutos do mar, porções generosas e ambiente refinado. Ideal para encontros em família ou comemorações especiais.",
+  },
+  {
+    id: 2,
+    nome: "L'Entrecôte de Paris",
+    descricao:
+      "Novidade no Pedaço: experiência francesa com prato único e molho secreto.",
+    imagem: "../img/lentrecote.jpg",
+    categoria: "Novidade no Pedaço",
+    endereco: "Rua Marília de Dirceu, 226 – Lourdes, BH",
+    detalhes:
+      "O L'Entrecôte de Paris oferece uma experiência gastronômica francesa com foco em um prato principal: entrecôte com batatas fritas e molho exclusivo. Sofisticação e simplicidade em um só lugar.",
+  },
+  {
+    id: 3,
+    nome: "Xapuri",
+    descricao: "Mais Bem Avaliado: referência em comida mineira tradicional.",
+    imagem: "../img/xapuri.jpg",
+    categoria: "Mais Bem Avaliado",
+    endereco: "Av. Deputado Anuar Menhem, 1179 – Pampulha, BH",
+    detalhes:
+      "O Xapuri é um dos restaurantes mais tradicionais de Belo Horizonte, com pratos típicos mineiros feitos no fogão à lenha. Ambiente rústico, acolhedor e rodeado de natureza.",
   },
 ];
 ```
