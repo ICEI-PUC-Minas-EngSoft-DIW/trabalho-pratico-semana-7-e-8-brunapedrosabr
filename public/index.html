@@ -1,13 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="app.js" defer></script>
-</head>
-<body>
-    <h1>Olá mundo</h1>
-</body>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GastroBH</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="logo"
+          ><img src="../img/Logo GastroBH.png" alt="Logo" class="logo-img"
+        /></a>
+        <ul class="menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Categorias</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="main">
+      <section class="secao-abertura">
+        <article class="artigo-abertura">
+          <img
+            src="https://picsum.photos/500/300"
+            alt="Imagem abertura"
+            class="abertura-img"
+          />
+          <div class="abertura-texto">
+            <h1>Conheça a gastronomia em BH como nunca antes!</h1>
+            <p>
+              Explore os sabores de Belo Horizonte e mantenha seu guia culinário
+              a um palmo de distância.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="destaques">
+        <article class="destaques-caixa">
+          <img
+            src="https://picsum.photos/300/200?1"
+            alt="Restaurante destaque"
+          />
+          <h3>Restaurante da Semana</h3>
+          <p>Conheça o lugar mais comentado da semana em BH!</p>
+        </article>
+
+        <article class="destaques-caixa">
+          <img
+            src="https://picsum.photos/300/200?2"
+            alt="Novidade gastronômica"
+          />
+          <h3>Novidade no Pedaço</h3>
+          <p>
+            Venha conhecer o novo espaço culinário em BH que promete resgatar a
+            tradição mineira.
+          </p>
+        </article>
+
+        <article class="destaques-caixa">
+          <img src="https://picsum.photos/300/200?3" alt="Melhor avaliado" />
+          <h3>Mais Bem Avaliado</h3>
+          <p>
+            Descubra o restaurante que recebeu as melhores avaliações dos
+            belo-horizontinos.
+          </p>
+        </article>
+      </section>
+
+      <section class="secao-influenciadores">
+        <article class="artigo-influenciadores">
+          <div class="texto-influenciadores">
+            <h2>Top 10 Escolhas dos Influenciadores</h2>
+            <p>
+              Descubra os lugares favoritos em BH dos criadores de conteúdo.
+            </p>
+            <button>Veja mais</button>
+          </div>
+          <img src="https://picsum.photos/400/250?1" alt="Influenciadores" />
+        </article>
+      </section>
+
+      <section class="secao-buteco">
+        <article class="artigo-buteco">
+          <img src="https://picsum.photos/400/250?2" alt="Comida di Buteco" />
+          <div class="texto-buteco">
+            <h2>Vencedores Comida di Buteco</h2>
+            <p>Conheça os campeões do concurso de sabor mais famoso de BH</p>
+            <button>Descubra agora</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="secao-newsletter">
+        <article class="forms-newsletter">
+          <h3>Acompanhe as novidades</h3>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" />
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" />
+          <button type="submit">Enviar</button>
+        </article>
+        <article class="secao-redes-sociais">
+          <h3>Redes Sociais</h3>
+          <div class="icones-redes-sociais">
+            <a href="#"
+              ><img src="https://picsum.photos/40?1" alt="Instagram"
+            /></a>
+            <a href="#"
+              ><img src="https://picsum.photos/40?2" alt="Facebook"
+            /></a>
+            <a href="#"
+              ><img src="https://picsum.photos/40?3" alt="Tik Tok"
+            /></a>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
 </html>

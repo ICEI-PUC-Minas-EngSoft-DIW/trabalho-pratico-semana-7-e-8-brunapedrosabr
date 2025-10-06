@@ -1,0 +1,246 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+}
+
+/* Header e Menu */
+.logo-img {
+  width: 120px;
+  height: auto;
+  padding: 5px;
+}
+
+.header {
+  padding: 20px;
+  background-color: #ffe5b4;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffe5b4;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  background-color: #ffe5b4;
+  gap: 20px;
+}
+
+.menu li a {
+  text-decoration: none; /* tira o sublinhado embaixo do link */
+  color: #333333;
+  padding: 8px;
+}
+
+.menu li a:hover {
+  color: #af5e1b;
+  font-weight: 900;
+}
+
+/* Seção Abertura */
+.secao-abertura {
+  background-color: #ffe5b4;
+  padding: 40px;
+}
+
+.artigo-abertura {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.abertura-img {
+  border-radius: 10px;
+  width: 50%;
+}
+
+.texto-abertura {
+  width: 50%;
+}
+
+/* Seção Destaques */
+.destaques {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px;
+  background-color: #ffffff;
+}
+
+.destaques-caixa {
+  background-color: #dddddd;
+  padding: 20px;
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.destaques-caixa:hover {
+  background-color: #cccccc;
+}
+
+.destaques-link {
+  text-decoration: none; /* tira o sublinhado embaixo do link */
+  color: #333333;
+  display: block;
+  width: 100%;
+}
+
+/* Seção Influenciadores */
+.secao-influenciadores {
+  background-color: #a9d183;
+  padding: 40px;
+}
+
+.artigo-influenciadores {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto-influenciadores {
+  width: 50%;
+}
+
+.texto-influenciadores button {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/* Seção Comida di Buteco */
+.secao-buteco {
+  background-color: #d48aa3;
+  padding: 40px;
+}
+
+.artigo-buteco {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.texto-buteco {
+  width: 50%;
+}
+
+.texto-buteco button {
+  margin-top: 10px;
+  padding: 10px 20px;
+}
+
+/* Seção Newsletter e Redes Sociais */
+.secao-newsletter {
+  background-color: #7abcdb;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.forms-newsletter {
+  width: 60%;
+}
+
+.forms-newsletter input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 8px;
+  width: 80%;
+}
+
+.forms-newsletter button {
+  padding: 10px 20px;
+}
+
+.secao-redes-sociais {
+  width: 30%;
+}
+
+.icones-redes-sociais {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #333333;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* -----------------Responsividade-------------------------- */
+
+@media screen and (max-width: 768px) {
+  /* Header e Menu */
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  /* Seção Abertura */
+  .artigo-abertura {
+    flex-direction: column;
+  }
+
+  .abertura-img,
+  .texto-abertura {
+    width: 100%;
+  }
+
+  /* Seção Destaques */
+  .destaques {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .destaques-caixa {
+    width: 100%;
+  }
+
+  /* Seção Influenciadores e Comida di Buteco */
+  .artigo-influenciadores,
+  .artigo-buteco {
+    flex-direction: column;
+  }
+
+  .texto-influenciadores,
+  .texto-buteco {
+    width: 100%;
+  }
+
+  /* Seção Newsletter e Redes Sociais */
+  .secao-newsletter {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .forms-newsletter,
+  .secao-redes-sociais {
+    width: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
